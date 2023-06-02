@@ -87,7 +87,7 @@ async function batchGetStarkInfo(){
             console.log(e.message)
         }
     }
-    browser.disconnect()
+    await browser.close()
 }
 
 batchGetStarkInfo()
